@@ -71,7 +71,7 @@ orders_clean = orders_clean.withColumn("order_amount", F.round(F.col("quantity")
 # ============================================================================
 # ERROR 1: Column name typo. 'unit_prise' does not exist.
 #          Uncomment the next line to turn this bug on.
-orders_clean = orders_clean.withColumn("order_amount", F.round(F.col("quantity") * F.col("unit_prise") * (1 - F.col("discount_pct") / 100), 2))
+#orders_clean = orders_clean.withColumn("order_amount", F.round(F.col("quantity") * F.col("unit_prise") * (1 - F.col("discount_pct") / 100), 2))
 # ============================================================================
 
 # COMMAND ----------
